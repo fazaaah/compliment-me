@@ -69,5 +69,9 @@ $('.generate-button').on('click', function(event){
     const strength = $('input[name=mild]:selected').val();
 })
 
+complimentsArray[i]
 
+// Finally, call the function
+// function getCompliment(){
 
+// }
