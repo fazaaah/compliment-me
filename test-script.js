@@ -150,6 +150,14 @@ const getCompliment = (strength, devMode) => {
 const findCompliment = () => {}
 
 $(function() {
+    $('#dev-checkbox').change(function () {
+        if (this.checked) {
+            $("body").addClass("body-dev");
+            $("input").addClass("button-dev");
+        } else {
+            $("body").removeClass("body-dev");
+        }
+        });
     $('.button').on('click', function (event) {
         event.preventDefault();
         if ($('input[type=text]').val() === ''){

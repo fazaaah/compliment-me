@@ -1,0 +1,113 @@
+body {
+    height: 100vh;
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: 2px;
+    // font-family: 'Source Code Pro', monospace;
+    background-color: rgba(242, 92, 160, 0.3);
+    background-color: rgba(245, 224, 0, 0.15);
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.generator-container {
+    background-size: cover;
+    display: flex;
+    height: 95vh;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    /* font-family: 'Sonsie One', cursive; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 100px;
+    letter-spacing: 3px;
+    line-height: 1.15;
+    /* color: #2e4999;
+    color: #5eddeb; */
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -moz-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
+    -moz-text-stroke-color: #000;
+    text-shadow: 6px 6px 0px rgba(255, 255, 255, 1);
+    text-shadow: 6px 6px 0px rgba(234, 44, 165, 0.67);
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1315px) {
+    h1 {
+        font-size: 90px;
+    }
+}
+
+input {
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: none;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+}
+
+.name-container {
+    letter-spacing: 2px;
+}
+
+.slider-container {
+    margin: 15px auto 10px auto;
+}
+
+.dev-mode {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    .dev-checkbox {
+        height: 20px;
+        width: 5%;
+    }
+    p {
+        width: 90%;
+        margin-top: 0;
+    }
+}
+
+.button {
+    width: 50%;
+    margin: 0 auto;
+    .submit {
+        background-color: #fff;
+        box-shadow: none;
+        border: 2px solid #333;
+        border-radius: 20px;
+        color: #333;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.output {
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    p {
+        margin: 5px auto;
+    }
+}
