@@ -1,18 +1,18 @@
 .body-dev {
     background-color: #292929;
-    font-family: 'Source Code Pro', monospace;
-    letter-spacing: 1px;
-    color: #fff;
+    // font-family: 'Source Code Pro', monospace;
+    // letter-spacing: 1px;
+    color: rgb(152,251,152);
 }
 
 .h1-dev {
-    -webkit-text-stroke-color: #fff;
-    -moz-text-stroke-color: #fff;
-    text-shadow: 6px 6px 0px #90c367;
+    -webkit-text-stroke-color: rgb(233, 214, 70);
+    -moz-text-stroke-color: rgb(233, 214, 70);
+    // text-shadow: 6px 6px 0px #90c367;
 }
 
 .output-dev {
-    color: #9370DB;
+    color: #fff;
 }
 
 .button-dev {
