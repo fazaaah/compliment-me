@@ -150,30 +150,19 @@ body {
   margin: 0;
   font-family: 'IBM Plex Sans', sans-serif;
   letter-spacing: 2px;
-  background-color: rgba(242, 92, 160, 0.3);
-  background-color: rgba(245, 224, 0, 0.15);
-  position: relative; }
+  background-color: rgba(245, 224, 0, 0.15); }
 
 .wrapper {
   width: 55%;
   margin: 0 auto;
   max-width: 560px; }
 
-@media (max-width: 1020px) {
-  .wrapper {
-    width: 70%; } }
-
-@media (max-width: 550px) {
-  .wrapper {
-    width: 90%;
-    max-width: 385px; } }
-
 .generator-container {
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 92vh;
+  height: 95vh;
   padding-top: 40px; }
 
 .flex-container {
@@ -193,14 +182,11 @@ h1 {
   font-size: 90px;
   letter-spacing: 3px;
   line-height: 1.15;
-  /* color: #2e4999;
-    color: #5eddeb; */
   color: transparent;
   -webkit-text-stroke-width: 3px;
   -moz-text-stroke-width: 3px;
   -webkit-text-stroke-color: #000;
   -moz-text-stroke-color: #000;
-  text-shadow: 6px 6px 0px white;
   text-shadow: 6px 6px 0px rgba(234, 44, 165, 0.67);
   margin-top: 0;
   margin-bottom: 40px; }
@@ -250,7 +236,8 @@ input[type=text], input[type=submit] {
   .dev-mode p {
     width: 90%;
     margin-top: 0;
-    padding-top: 5px;
+    font-size: 18px;
+    padding-top: 3px;
     padding-left: 10px; }
 
 .button {
@@ -267,7 +254,9 @@ input[type=text], input[type=submit] {
     margin-bottom: 20px; }
 
 .output {
-  font-size: 20px; }
+  font-size: 20px;
+  height: 60px;
+  margin-bottom: 20px; }
 
 footer {
   text-align: center;
@@ -279,6 +268,10 @@ footer {
   h1 {
     font-size: 80px; } }
 
+@media (max-width: 1020px) {
+  .wrapper {
+    width: 70%; } }
+
 @media (max-width: 705px) {
   h1 {
     font-size: 70px;
@@ -286,12 +279,20 @@ footer {
     -webkit-text-stroke-width: 2px;
     -moz-text-stroke-width: 2px; }
   .slider-container .slider-div {
-    margin: 5px 20px 0 20px; } }
+    margin: 5px 20px 0 20px; }
+  .dev-mode input.dev-checkbox {
+    height: 25px;
+    width: 25px; } }
 
 @media (max-width: 625px) {
   h1 {
     font-size: 60px;
     text-shadow: 4px 4px 0px rgba(234, 44, 165, 0.67); } }
+
+@media (max-width: 550px) {
+  .wrapper {
+    width: 90%;
+    max-width: 385px; } }
 
 @media (max-width: 420px) {
   h1 {
@@ -300,9 +301,15 @@ footer {
   .slider-container .slider-div {
     margin: 5px 10px 0 10px; } }
 
-@media (max-width: 375px) {
-  .generator-container {
-    height: 90vh; } }
+@media (max-width: 360px) {
+  .slider-container {
+    margin-bottom: 15px; }
+  .dev-mode {
+    margin-bottom: 0; }
+  .output {
+    margin-top: 0; }
+  body, input {
+    font-size: 14px; } }
 
 input[type=range] {
   -webkit-appearance: none;

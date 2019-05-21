@@ -72,6 +72,11 @@ const getCompliment = (strength, devMode) => {
             compliment: `${usersName}, you constantly uplift people.`
         },
         {
+            strength: 2,
+            devMode: false,
+            compliment: `${usersName}, you have an awesome work ethic.`
+        },
+        {
             strength: 3,
             devMode: false,
             compliment: `${usersName}, you are a perfect and wonderful angel of light and warmth.`
@@ -95,6 +100,11 @@ const getCompliment = (strength, devMode) => {
             strength: 3,
             devMode: false,
             compliment: `${usersName}, dogs always want to become friends with you.`
+        },
+        {
+            strength: 3,
+            devMode: false,
+            compliment: `${usersName}, I can't think of anyone who deserves all the good things in their life more.`
         },
         {
             strength: 1,
@@ -131,7 +141,19 @@ const getCompliment = (strength, devMode) => {
             devMode: true,
             compliment: `${usersName}, you could've written Javascript in 8 days and got the weekend off.`
         },
+        {
+            strength: 3,
+            devMode: true,
+            compliment: `${usersName}, the W3 has you on speed dial for their internet questions.`
+        },
+        {
+            strength: 3,
+            devMode: true,
+            compliment: `${usersName}, I'd turn to you before Stack Overflow.`
+        },
     ]
+
+    // Compliment contributions by Kat Bosnic, Alex Dodd
 
     const matchingCompliments = allCompliments.filter(compliment => {
         return compliment.strength === parseInt(strength) && compliment.devMode === devMode

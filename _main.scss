@@ -3,10 +3,7 @@ body {
     margin: 0;
     font-family: 'IBM Plex Sans', sans-serif;
     letter-spacing: 2px;
-    // font-family: 'Source Code Pro', monospace;
-    background-color: rgba(242, 92, 160, 0.3);
     background-color: rgba(245, 224, 0, 0.15);
-    position: relative;
 }
 
 .wrapper {
@@ -15,23 +12,10 @@ body {
     max-width: 560px;
 }
 
-@media (max-width: 1020px) {
-    .wrapper {
-        width: 70%;
-    }
-}
-
-@media (max-width: 550px) {
-    .wrapper {
-        width: 90%;
-        max-width: 385px;
-    }
-}
-
 .generator-container {
     background-size: cover;
     display: flex;
-    height: 92vh;
+    height: 95vh;
     padding-top: 40px;
 }
 
@@ -48,14 +32,11 @@ h1 {
     font-size: 90px;
     letter-spacing: 3px;
     line-height: 1.15;
-    /* color: #2e4999;
-    color: #5eddeb; */
     color: transparent;
     -webkit-text-stroke-width: 3px;
     -moz-text-stroke-width: 3px;
     -webkit-text-stroke-color: #000;
     -moz-text-stroke-color: #000;
-    text-shadow: 6px 6px 0px rgba(255, 255, 255, 1);
     text-shadow: 6px 6px 0px rgba(234, 44, 165, 0.67);
     margin-top: 0;
     margin-bottom: 40px;
@@ -73,12 +54,6 @@ input[type=text], input[type=submit] {
 .name-container {
     letter-spacing: 2px;
 }
-
-// svg {
-//     color: blue;
-//     background-color: blue;
-//     fill: blue;
-// }
 
 .slider-container {
     margin: 25px auto 20px auto;
@@ -108,7 +83,8 @@ input[type=text], input[type=submit] {
     p {
         width: 90%;
         margin-top: 0;
-        padding-top: 5px;
+        font-size: 18px;
+        padding-top: 3px;
         padding-left: 10px;
     }
 }
@@ -129,14 +105,14 @@ input[type=text], input[type=submit] {
 
 .output {
     font-size: 20px;
-    // height: 60px;
+    height: 60px;
+    margin-bottom: 20px;
 }
 
 footer {
     text-align: center;
     font-size: 12px;
     p {
-        // padding-bottom: 5px;
         text-align: center;
     }
 }
@@ -146,6 +122,12 @@ footer {
 @media (max-width: 1135px) {
     h1 {
         font-size: 80px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .wrapper {
+        width: 70%;
     }
 }
 
@@ -161,12 +143,25 @@ footer {
             margin: 5px 20px 0 20px;
         }
     }
+    .dev-mode {
+        input.dev-checkbox {
+            height: 25px;
+            width: 25px;
+        }
+    }
 }
 
 @media (max-width: 625px) {
     h1 {
         font-size: 60px;
         text-shadow: 4px 4px 0px rgba(234, 44, 165, 0.67);
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        width: 90%;
+        max-width: 385px;
     }
 }
 
@@ -182,8 +177,17 @@ footer {
     }
 }
 
-@media (max-width: 375px) {
-    .generator-container {
-        height: 90vh;
+@media (max-width: 360px) {
+    .slider-container {
+        margin-bottom: 15px;
+    }
+    .dev-mode {
+        margin-bottom: 0;
+    }
+    .output {
+        margin-top: 0;
+    }
+    body, input {
+        font-size: 14px;
     }
 }

@@ -7,8 +7,9 @@
     <title>Compliment Generator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link type="image/png" href="assets/favicon.ico" rel="icon">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:900|IBM+Plex+Sans|Sonsie+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900|IBM+Plex+Sans|Sonsie+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -24,13 +25,11 @@
             
             <div class="slider-container">
                 <img src="assets/smile-1.svg">
-                <!-- <i class="far fa-smile"></i> -->
                 <div class="slider-div">
-                    <input type="range" id="strength" class="slider" name="strength" min="1" max="3" step="1" value="2">
+                    <input type="range" id="strength" class="slider" name="strength" min="1" max="3" step="1" value="2" aria-valuemin="1" aria-valuemax="3" aria-valuenow="2">
                     <label for="name" class="visually-hidden">Strength of compliment</label>
                 </div>
                 <img src="assets/smile-3.svg">
-                <!-- <i class="far fa-laugh-beam"></i> -->
             </div>
 
             <div class="dev-mode">
@@ -54,9 +53,7 @@
     </section>
 
     <footer>
-        <p>Compliment contributions by Kat Bosnic, Alex Dodd  •  Icons by AomAm from the Noun Project </p>
-        <!-- <p></p>
-        <p></p> -->
+        <p> Icons by AomAm from the Noun Project </p>
     </footer>
     </div>
     
