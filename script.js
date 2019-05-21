@@ -1,6 +1,5 @@
 const getCompliment = (strength, devMode) => {
     const usersName = $('#name').val();
-    console.log(strength, devMode);
     const allCompliments = [
         {
             strength: 1,
@@ -133,7 +132,6 @@ const getCompliment = (strength, devMode) => {
             compliment: `${usersName}, you could've written Javascript in 8 days and got the weekend off.`
         },
     ]
-    console.log(allCompliments);
 
     const matchingCompliments = allCompliments.filter(compliment => {
         return compliment.strength === parseInt(strength) && compliment.devMode === devMode
@@ -144,7 +142,6 @@ const getCompliment = (strength, devMode) => {
     const randomCompliment = matchingCompliments[randomNumber];
 
     $('.output').text(randomCompliment.compliment);
-    
 };
 
 const findCompliment = () => {}
@@ -166,7 +163,6 @@ $(function() {
     $('.button').on('click', function (event) {
         event.preventDefault();
         if ($('input[type=text]').val() === ''){
-            // alert('Please enter your name');
             $('.output').text('Please enter your name.')
         } else {
             const strength = $('#strength').val();

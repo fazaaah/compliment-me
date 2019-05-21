@@ -48,6 +48,9 @@ input[type=range]::-moz-range-thumb {
   border-radius: 3px;
   background: #34c3ff;
   cursor: pointer;
+    &:focus {
+        box-shadow: 2px 2px 2px pink, 2px 2px 2px pink;
+    }
 }
 input[type=range]::-ms-track {
   width: 100%;
