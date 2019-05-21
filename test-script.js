@@ -153,9 +153,14 @@ $(function() {
     $('#dev-checkbox').change(function () {
         if (this.checked) {
             $("body").addClass("body-dev");
+            $("h1").addClass("h1-dev");
             $("input").addClass("button-dev");
+            $("p.output").addClass("output-dev");
         } else {
             $("body").removeClass("body-dev");
+            $("h1").removeClass("h1-dev");
+            $("input").removeClass("button-dev");
+            $("p.output").removeClass("output-dev");
         }
         });
     $('.button').on('click', function (event) {

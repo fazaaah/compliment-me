@@ -1,8 +1,18 @@
 .body-dev {
-    background-color: #333;
+    background-color: #292929;
     font-family: 'Source Code Pro', monospace;
     letter-spacing: 1px;
     color: #fff;
+}
+
+.h1-dev {
+    -webkit-text-stroke-color: #fff;
+    -moz-text-stroke-color: #fff;
+    text-shadow: 6px 6px 0px #90c367;
+}
+
+.output-dev {
+    color: #9370DB;
 }
 
 .button-dev {

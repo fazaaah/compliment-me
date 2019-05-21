@@ -1,37 +1,51 @@
 body {
     height: 100vh;
+    margin: 0;
     font-family: 'IBM Plex Sans', sans-serif;
     letter-spacing: 2px;
     // font-family: 'Source Code Pro', monospace;
     background-color: rgba(242, 92, 160, 0.3);
     background-color: rgba(245, 224, 0, 0.15);
+    position: relative;
 }
 
 .wrapper {
-    width: 80%;
+    width: 55%;
     margin: 0 auto;
+    max-width: 560px;
+}
+
+@media (max-width: 1020px) {
+    .wrapper {
+        width: 70%;
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        width: 90%;
+        max-width: 385px;
+    }
 }
 
 .generator-container {
     background-size: cover;
     display: flex;
-    height: 95vh;
-    align-items: center;
+    // height: 95vh;
+    padding-top: 50px;
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    padding: 50px;
 }
 
 h1 {
     text-align: center;
-    /* font-family: 'Sonsie One', cursive; */
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 100px;
+    font-size: 90px;
     letter-spacing: 3px;
     line-height: 1.15;
     /* color: #2e4999;
@@ -47,13 +61,36 @@ h1 {
     margin-bottom: 40px;
 }
 
-@media (max-width: 1315px) {
+@media (max-width: 1135px) {
     h1 {
-        font-size: 90px;
+        font-size: 80px;
     }
 }
 
-input {
+@media (max-width: 705px) {
+    h1 {
+        font-size: 70px;
+        line-height: 1.1;
+        -webkit-text-stroke-width: 2px;
+        -moz-text-stroke-width: 2px;
+    }
+}
+
+@media (max-width: 625px) {
+    h1 {
+        font-size: 60px;
+        text-shadow: 4px 4px 0px rgba(234, 44, 165, 0.67);
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 48px;
+        letter-spacing: 2px;
+    }
+}
+
+input[type=text], input[type=submit] {
     padding: 15px;
     width: 100%;
     border-radius: 20px;
@@ -66,8 +103,25 @@ input {
     letter-spacing: 2px;
 }
 
+// svg {
+//     color: blue;
+//     background-color: blue;
+//     fill: blue;
+// }
+
 .slider-container {
-    margin: 15px auto 10px auto;
+    margin: 25px auto 20px auto;
+    display: flex;
+    justify-content: space-between;
+    img {
+        height: 60px;
+        width: 60px;
+        color: black;
+    }
+    .slider-div {
+        width: 72%;
+        margin-top: 5px;
+    }
 }
 
 .dev-mode {
@@ -75,14 +129,16 @@ input {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
-    .dev-checkbox {
-        height: 20px;
-        width: 5%;
+    margin-bottom: 10px;
+    input.dev-checkbox {
+        height: 30px;
+        width: 30px;
     }
     p {
         width: 90%;
         margin-top: 0;
+        padding-top: 5px;
+        padding-left: 10px;
     }
 }
 
@@ -102,12 +158,14 @@ input {
 
 .output {
     font-size: 20px;
+    height: 60px;
 }
 
 footer {
     text-align: center;
     font-size: 12px;
     p {
-        margin: 5px auto;
+        padding-bottom: 5px;
+        text-align: center;
     }
 }
